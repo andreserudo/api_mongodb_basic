@@ -5,7 +5,7 @@ async function main(){
         mongoose.set("strictQuery", true);
 
         await mongoose.connect(
-            "mongodb://localhost:27017/"
+            "mongodb://localhost:27017/music"
         );
     } catch (error) {
         console.log(`Error: ${error}`);
