@@ -4,4 +4,10 @@ const app = express();
 
 conn();
 
+const routes = [
+    require('./modules/artists/routes/route')
+];
+
+routes.forEach((route) => route(app));
+
 module.exports = app;
