@@ -9,7 +9,7 @@ const createAction = async (req, res) => {
         res.status(201).send()
         return
     }catch (error){
-        res.status(500).send({message: error})
+        res.status(500).send({message: 'something went wrong'})
         return
     }
 }
